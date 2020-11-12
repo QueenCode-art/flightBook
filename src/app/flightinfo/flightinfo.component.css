@@ -1,0 +1,32 @@
+header{
+    background-color: orange;
+    font-size: 40px;
+    text-align: center;
+    max-width: 100%;
+    height: 17%;
+    padding: 1px;
+    color: white;
+    font-weight: bold;
+    margin-top: 0;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+.inner{
+    background: white;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: dimgray;
+    top: 180px;
+    left: 25%;
+    margin-top: 80px;
+    right: 25%;
+    margin-top: 0; 
+}

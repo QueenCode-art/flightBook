@@ -1,0 +1,114 @@
+
+<div>
+    <header>
+        Flitebooker
+    </header>
+</div>
+<form (ngSubmit)= "onSubmit()"  [formGroup]="bookdetailsProfile"  >    
+        <div>
+     <h3 class= "bookD" >
+         Booking Details
+     </h3>
+ </div>
+ <div>
+     <div class = "fname">
+         <input formControlName="firstName" type="text" id = "fname" name="fname" placeholder="Firstname">
+         <div *ngIf="bookdetailsProfile.controls.firstName.invalid && bookdetailsProfile.controls.firstName.errors.required && (bookdetailsProfile.controls.firstName.dirty || bookdetailsProfile.controls.firstName.touched)" class="alert">ENTER FIRSTNAME</div>
+        </div>
+     <div class = "lname">
+            <input formControlName= "lastName" type="text" id = "lname" name="lname" placeholder="Lastname">
+            <div *ngIf="bookdetailsProfile.controls.lastName.invalid && bookdetailsProfile.controls.lastName.errors.required && (bookdetailsProfile.controls.lastName.dirty || bookdetailsProfile.controls.lastName.touched)" class="alert">ENTER LASTNAME</div>
+        </div>
+        <div class = "email">
+                <input formControlName= "email" type="textem" id = "email" name="email" placeholder="Email Address">
+                <div *ngIf="bookdetailsProfile.controls.email.invalid && bookdetailsProfile.controls.email.errors.required && (bookdetailsProfile.controls.email.dirty || bookdetailsProfile.controls.email.touched)" class="alert">ENTER EMAIL ADDRESS</div>
+            </div>
+
+                <div class="destin">
+                    <label>Destination</label>
+                    <select name="destination" id="destination" formControlName="destination">
+                    <option></option>    
+                    <option>Albania</option>
+                    <option>Algeria</option>
+                    <option>Australia</option>
+                    <option>Austria</option>
+                    <option>Bahamas</option>
+                    <option>Belgium</option>
+                    <option>Benin</option>
+                    <option>Brazil</option>
+                    <option>Canada</option>
+                    <option>Chad</option>
+                    <option>Chile</option>
+                    <option>China</option>
+                    <option>Denmark</option>
+                    <option>Dominica</option>
+                    <option>DominicanRepublic</option>
+                    <option>Egypt</option>
+                    <option>Finland</option>
+                    <option>France</option>
+                    </select>   
+                    <div *ngIf="bookdetailsProfile.controls.destination.invalid && bookdetailsProfile.controls.destination.errors.required && (bookdetailsProfile.controls.destination.dirty || bookdetailsProfile.controls.destination.touched)" class="alert">select destination</div>
+            </div>
+             <div class="airline">
+                 <label>Airline</label>
+                   <select name="preferredAirline" id="preferredAirline" formControlName="preferredAirline">
+                   <option></option>
+                   <option>Arik</option>
+                   <option>British</option>
+                   <option>Delta</option>
+                   <option>Emirates</option>
+                   <option>Lufthansa</option>
+                   <option>RyanAir</option>
+                   </select>
+                   <div *ngIf="bookdetailsProfile.controls.preferredAirline.invalid && bookdetailsProfile.controls.preferredAirline.errors.required && (bookdetailsProfile.controls.preferredAirline.dirty || bookdetailsProfile.controls.preferredAirline.touched)" class="alert">select airline</div>
+            </div>
+            <div class = "passenger">
+                <label>Passenger</label>
+                <select name="passenger" id= "passenger" formControlName="passenger">
+                    <option></option>
+                    <option>Adult</option>
+                    <option>Child</option>
+                    <option>Infant</option>
+                </select>
+                <div *ngIf="bookdetailsProfile.controls.passenger.invalid && bookdetailsProfile.controls.passenger.errors.required && (bookdetailsProfile.controls.passenger.dirty || bookdetailsProfile.controls.passenger.touched)" class="alert">select passenger</div>
+                </div>   
+                <div class = "typeOfClass">
+                    <label>Class</label>
+                        <select name= "typeOfClass" id = "typeOfClass" formControlName= "typeOfClass">
+                            <option></option>
+                            <option>First</option>
+                            <option>Business</option>
+                            <option>Economy</option>
+                        </select>
+                        <div *ngIf="bookdetailsProfile.controls.typeOfClass.invalid && bookdetailsProfile.controls.typeOfClass.errors.required && (bookdetailsProfile.controls.typeOfClass.dirty || bookdetailsProfile.controls.typeOfClass.touched)" class="alert">select class</div>         
+                        </div>   
+            <div class= "DOD">
+                    <label for="DOD">Date of Departure</label><br>
+                    <input type="date" formControlName= "dateDeparture">
+                    <div *ngIf="bookdetailsProfile.controls.dateDeparture.invalid && bookdetailsProfile.controls.dateDeparture.errors.required && (bookdetailsProfile.controls.dateDeparture.dirty || bookdetailsProfile.controls.dateDeparture.touched)" class="alert">Date of Departure is required</div>
+                </div> 
+                <div class="DOA"> 
+                        <label for="DOA" >Date of Arrival</label><br>
+                        <input type="date" formControlName= "dateArrival">
+                        <div *ngIf="bookdetailsProfile.controls.dateArrival.invalid && bookdetailsProfile.controls.dateArrival.errors.required && (bookdetailsProfile.controls.dateArrival.dirty || bookdetailsProfile.controls.dateArrival.touched)" class="alert">Date of Arrival is required</div>
+                    </div>        
+                    <button  class= "submit" type="submit" [disabled]="!bookdetailsProfile.valid">Submit</button>
+                    <button class="reset">  <a routerLink= "/homepage">Back</a></button>
+                    </div>
+                    <aside>
+                            <img src="/assets/images/airplanes.jpg" alt="irplane">
+                        </aside> 
+                    </form> 
+              
+                    
+                    
+         
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,176 @@
+    header{
+  background-color: orange;
+  font-size: 40px;
+  text-align: center;
+  max-width: 100%;
+  height: 10%;
+  padding: 1px;
+  color: white;
+  font-weight: bold;
+  margin-top: 0;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}    
+
+.bookD{
+  position: fixed;
+  top: 80px;
+  left: 20%;
+}
+ /* .wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-image: url('/assets/images/plane.jpg');
+  background-size: 300px 1000px */
+  /* justify-content: left;
+  align-items: left;
+  margin-top: 80px;
+  position: fixed;
+  top:150px;
+  right: 15px;
+  margin-top: 0;
+  }  */
+
+
+.fname {
+  position: fixed;
+  left: 10px;
+  top: 130px;
+}
+.lname {
+  position: fixed;
+  left:350px;
+  top: 130px;
+}
+.email{
+  position: fixed;
+  left:10px;
+  top: 210px;
+}
+
+input[type = textem], select {
+  width: 309%;
+  padding: 6px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button{
+  background-color: orange;
+  border: none;
+  border-radius: 6px;      
+  width: 1500%;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+input[type=text], select {
+  width: 150%;
+  padding: 6px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.destin{
+  position: fixed;
+  left:10px;
+  top: 290px;
+  width: 16%;
+}
+.destin.select {
+  /* width: 150%; */
+  padding: 6px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border:1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+}
+.airline{
+  position: fixed;
+  left:350px;
+  top: 290px;
+  width: 16%
+}
+.airline.select {
+  /* width: 3000%; */
+  padding: 6px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border:1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+}
+
+.passenger{
+  position: fixed;
+  left: 10px;
+  top: 370px;
+  width: 16%
+}
+
+.typeOfClass{
+  position: fixed;
+  left: 350px;
+  top: 370px;
+  width: 16% 
+}
+.DOD{
+  position: fixed;
+  left:10px;
+  top: 450px;
+  width: 40%
+}
+
+.DOA{
+  position: fixed;
+  left: 350px;
+  top: 450px;
+  width: 16%
+}
+.submit{
+  position: fixed;
+  left:10px;
+  top: 532px;
+  width: 30%
+}
+.reset{
+  position: fixed;
+  left:470px;
+  top: 532px;
+  width: 10%
+
+}
+.alert{
+  color:red;
+  text-align: left;
+  font-size: 8pt;
+  position: relative;
+  top:23%;
+}
+
+ aside{
+background-size: 600px 1000px;
+ 
+  
+
+
+  } 
