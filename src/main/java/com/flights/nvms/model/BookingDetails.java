@@ -57,6 +57,10 @@ public class BookingDetails {
     @Column(name = "DOD")
     private Date dateDeparture;
 
+
+    @OneToOne(mappedBy = "bookingDetails")
+    private FlightDetail flightDetail;
+
     public BookingDetails(String firstName, String lastName, Passenger passenger, String email, Airlines preferredAirline, TypeOfClass typeOfClass, Destination destination, Date dateArrival, Date dateDeparture) {
         this.firstName = firstName;
         this.lastName = lastName;

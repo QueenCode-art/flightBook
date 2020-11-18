@@ -38,7 +38,7 @@ public class BookingDetailsService {
     }
 
 
-    public List<BookingDetails> addBookingDetails(BookingDetails bookingDetails) {
+    public FlightDetail addBookingDetails(BookingDetails bookingDetails) {
 
         bookingDetailsRepository.save(bookingDetails);
 
@@ -99,7 +99,7 @@ public class BookingDetailsService {
         javaMailSender.send(mailMessage);
 
         flightDetailRepository.save(detail);
-        return getAllBookings();
+        return detail;
     }
 }
 

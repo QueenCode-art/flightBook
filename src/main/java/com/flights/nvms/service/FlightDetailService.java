@@ -31,9 +31,9 @@ public class FlightDetailService {
         return flightDetailRepository.findAll();
     }
 
-    public FlightDetail getFlight(Integer id) {
+    public FlightDetail getFlight(Integer book_id) {
 
-        return flightDetailRepository.getOne((id));
+        return flightDetailRepository.getOne((book_id));
     }
 
     public List<FlightDetail> updateFlight(FlightDetail flightDetail) {

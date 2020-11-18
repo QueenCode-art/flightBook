@@ -21,8 +21,8 @@ public class FlightDetailController {
     }
 
     @GetMapping("/flightDetails/{id}")
-    public FlightDetail getAllFlight(@PathVariable("id") Integer id){
-        return flightDetailService.getFlight(id);
+    public FlightDetail getFlight(@PathVariable("id") Integer book_id){
+        return flightDetailService.getFlight(book_id);
     }
 
     @PutMapping("/flightDetails")

@@ -2,6 +2,7 @@ package com.flights.nvms.controller;
 
 
 import com.flights.nvms.model.BookingDetails;
+import com.flights.nvms.model.FlightDetail;
 import com.flights.nvms.service.BookingDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +23,7 @@ public class BookingDetailController {
 
 
     @PostMapping("/bookingDetails")
-    public List<BookingDetails> addBookingDetails (@RequestBody BookingDetails bookingDetails){
+    public FlightDetail addBookingDetails (@RequestBody BookingDetails bookingDetails){
         return bookingDetailsService.addBookingDetails(bookingDetails);
     }
 

@@ -62,6 +62,9 @@ public class FlightDetail {
         @Column(name = "AMOUNT", nullable = false)
         private int amount;
 
+      @OneToOne(cascade = CascadeType.ALL)
+      @JoinColumn(name = "book_id", referencedColumnName = "id")
+      private BookingDetails bookingDetails;
 
 //    public FlightDetail(String name, Airlines preferredAirline, TypeOfClass typeOfClass, Destination destination, Date dateDeparture, Date dateArrival, String flightNo, String email) {
 //        this.name = name;
